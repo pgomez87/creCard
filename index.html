@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+
+    <title> Crecard | Credit Card Manager </title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper grey darken-4">
+            <div class="container">
+                <a href="#" class="brand-logo">Crecard</a>
+                <ul class="right">
+                    <li>
+                        <a class="clear-btn btn grey darken-3">Clear All</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Form -->
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Add Purchase</span>
+                <div class="col">
+                    <div class="row">
+                        <div class="inputfield col s6">
+                            <label for="item-name">Purchase</label>
+                            <input type="text" placeholder="Add Item" id="item-name">
+                        </div>
+                        <div class="inputfield col s6">
+                            <label for="item-cost">Cost</label>
+                            <input type="number" placeholder="Add Cost" id="item-cost">
+                        </div>
+                        <button class="add-btn btn black darken-3"><i class="fas fa-plus"></i> Add Purchase</button>
+                        <button class="update-btn btn yellow darken-3"><i class="fas fa-pencil-alt"></i> Update Purchase</button>
+                        <button class="delete-btn btn red darken-3"><i class="fas fa-minus"></i> Delete Purchase</button>
+                        <button class="back-btn btn grey pull-back "><i class="fas fa-arrow-left"></i> Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Amount Due -->
+        <h3 class="center-align">Amout Due: <span class="amount-due"></span></h3>
+
+        <!-- Purchases list -->
+        <ul id="item-list" class="collection">
+            <!-- <li class="collection-item" id="item-0">
+                <strong>Office Chair : </strong><em>$ 150</em>
+                <a href="#" class="secondary-content">
+                    <i class="edit-item fas fa-pencil-alt"></i>
+                </a>
+            </li>
+            <li class="collection-item" id="item-0">
+                <strong>Tennis Shoes : </strong><em>$ 72</em>
+                <a href="#" class="secondary-content">
+                    <i class="edit-item fas fa-pencil-alt"></i>
+                </a>
+            </li>
+            <li class="collection-item" id="item-0">
+                <strong>Denny's Dinner : </strong><em>$ 32</em>
+                <a href="#" class="secondary-content">
+                    <i i class="edit-item fas fa-pencil-alt"></i>
+                </a>
+            </li> -->
+        </ul>
+    </div>
+
+
+
+
+
+    <!-- Libraries -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <!-- Modules -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
